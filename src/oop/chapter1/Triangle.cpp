@@ -7,6 +7,7 @@
 
 #include "Triangle.h"
 
+namespace OOP1 {
 Triangle::Triangle(int t_base, int t_height, int t_sides) :
 		Polygon(t_sides), height(t_height), base(t_base) {
 }
@@ -24,3 +25,5 @@ double Triangle::ComputeArea() {
 	area = 0.5 * this->base * this->height;
 	return area;
 }
+}
+

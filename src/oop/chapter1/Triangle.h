@@ -11,6 +11,7 @@
 #include "Polygon.h"
 #include <math.h>
 
+namespace OOP1 {
 class Triangle: public Polygon {
 private:
 	int height;
@@ -25,5 +26,6 @@ public:
 	double ComputeArea();
 
 };
+}
 
 #endif /* SRC_OOP_CHAPTER1_TRIANGLE_H_ */
