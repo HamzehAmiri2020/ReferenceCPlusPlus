@@ -16,8 +16,13 @@ private:
 	int sides;
 public:
 	Polygon();
-	Polygon(int p_sides);
-	virtual ~Polygon() { std::cout << "Destructor of BarBase" << std::endl; }
+	Polygon(int p_sides) :
+			sides(p_sides) {
+		std::cout << "Constructor of Polygon" << std::endl;
+	}
+	virtual ~Polygon() {
+		std::cout << "DeConstructor of Polygon" << std::endl;
+	}
 	virtual int Perimeter() = 0;
 	virtual double ComputeArea() = 0;
 };

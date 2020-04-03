@@ -19,9 +19,13 @@ private:
 public:
 	Triangle() :
 			Polygon(0), height(0), base(0) {
+		std::cout << "Constructor1 of Triangle" << std::endl;
 	}
 
-	Triangle(int t_base, int t_height, int t_sides);
+	Triangle(int t_base, int t_height, int t_sides) :
+			Polygon(t_base), height(t_height), base(t_sides) {
+		std::cout << "Constructor2 of Triangle" << std::endl;
+	}
 	int Perimeter();
 	double ComputeArea();
 
