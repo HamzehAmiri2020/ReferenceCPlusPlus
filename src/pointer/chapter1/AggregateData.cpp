@@ -28,8 +28,9 @@ int AggregateData::Sum() {
 
 void AggregateData::runService() {
 	int arrayData[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	auto lenghtArray = sizeof(arrayData) / sizeof(int);
 	AggregateData *agg = new AggregateData();
-	agg->setSize(10);
+	agg->setSize(lenghtArray);
 	agg->setStartData(arrayData);
 	cout << "Sum : " << agg->Sum() << endl;
 }
