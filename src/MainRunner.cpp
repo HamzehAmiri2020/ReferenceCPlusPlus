@@ -7,15 +7,16 @@
 
 #include "oop/chapter1/Triangle.h"
 #include "pointer/chapter1/AggregateData.h"
+#include "pthread/chapter2/ThreadPool.h"
 
 int main(int argc, char **argv) {
 	using Pointer::AggregateData;
 	AggregateData::runService();
 
 	using OOP1::Triangle;
-	Triangle tr1(2, 2, 2);
-	Triangle *tr2 = new Triangle(2, 2, 2);
-	cout << tr2->ComputeArea();
-	cout << tr1.ComputeArea();
+	Triangle::runService();
+
+	using ThreadPool2::ThreadPool;
+	ThreadPool::runService();
 }
 

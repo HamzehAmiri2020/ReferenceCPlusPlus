@@ -29,6 +29,7 @@ public:
 	int Perimeter();
 	double ComputeArea();
 
+	static void runService();
 };
 }
 
