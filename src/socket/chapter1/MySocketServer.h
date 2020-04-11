@@ -17,10 +17,7 @@ private:
 	struct sockaddr_in *address;
 public:
 	MySocketServer();
-	MySocketServer(int port) :
-			server_fd(0), PORT(port), address(nullptr) {
-
-	}
+	MySocketServer(int port);
 };
 }
 
