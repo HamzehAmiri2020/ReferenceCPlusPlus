@@ -7,9 +7,13 @@
 
 #include "Mythread.h"
 
-namespace Thread {
+namespace MyThread {
 Mythread::Mythread() {
 
+}
+
+void* Mythread::run() {
+	return 0;
 }
 
 void Mythread::runService() {

@@ -11,7 +11,7 @@
 #include <iostream>
 using namespace std;
 
-namespace Thread {
+namespace MyThread {
 class Mythread {
 public:
 	Mythread();
