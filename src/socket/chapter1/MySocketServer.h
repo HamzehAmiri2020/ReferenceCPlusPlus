@@ -18,6 +18,12 @@ private:
 public:
 	MySocketServer();
 	MySocketServer(int port);
+
+	virtual ~MySocketServer();
+
+	virtual void startServer();
+
+	static void runService();
 };
 }
 
