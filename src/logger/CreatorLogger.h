@@ -15,6 +15,7 @@ using namespace Logger;
 class CreatorLogger {
 private:
 public:
+	CreatorLogger();
 	virtual ~CreatorLogger();
 
 	virtual Logger* FactoryMethod();
